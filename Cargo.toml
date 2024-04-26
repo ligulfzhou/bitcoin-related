@@ -1,0 +1,30 @@
+[package]
+name = "btc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ord = "0.18.3"
+ordinals = "0.0.8"
+bitcoin = { version = "0.30", features = ["rand", "serde", "base64", "rand-std"] }
+bip32 = { version = "0.5.1", features = ["bip39"] }
+bip39 = "2.0.0"
+secp256k1 = { version = "0.29.0", features = ["rand"] }
+
+anyhow = { version = "1.0", default-features = false }
+dotenv = "0.15.0"
+zeromq = "0.3.5" # zmq
+tokio = { workspace = true }
+hex = { workspace = true }
+electrum-client = "0.18.0"
+bitcoin-private = "0.1.0"
+
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.116"
+reqwest = { version = "0.12.4", features = ["json"] }
+
+redb = "2.1.0"
+
+#bitcoincore-rpc = "0.18.0"
+#bdk = { version = "1.0.0-alpha.8", dfault-features = false, features = ["all-keys", "compiler", "std"] }
+#bdk_chain = { version = "0.11.0", features = ["std", "serde"] }
