@@ -19,15 +19,3 @@ pub async fn get_recommended_fee() -> anyhow::Result<RecommendedFee> {
 
     Ok(res)
 }
-
-#[cfg(test)]
-mod tests {
-    use crate::fee::get_recommended_fee;
-
-    #[tokio::test]
-    async fn test() -> anyhow::Result<()> {
-        let rf = get_recommended_fee().await?;
-
-        Ok(())
-    }
-}

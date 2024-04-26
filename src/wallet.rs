@@ -1,3 +1,5 @@
+// generate a list of keypair from mnemonic code.
+
 // use bdk::{
 //     bitcoin::Network,
 //     keys::{DerivableKey, ExtendedKey},
